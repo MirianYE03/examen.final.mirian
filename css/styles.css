@@ -1,0 +1,88 @@
+body {
+  background-color: #ffe4e6;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  color: #d06db3 !important;
+}
+
+h1 {
+  color: red;
+}
+
+.navbar {
+  background-color: #f7b2d9;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navbar-brand,
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-custom {
+  background-color: #ff80ac;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #f06292;
+}
+
+footer {
+  background-color: #f7b2d9;
+  color: #ffffff;
+}
+
+.footer-links a {
+  color: #d06db3;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.product img {
+  border-radius: 10px;
+  border: 2px solid #d06db3;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.highlight {
+  font-size: 1.8rem;
+  color: #d06db3;
+  font-weight: bold;
+}
+
+/* Estilo de las cards de productos */
+.card {
+  border: 1px solid #d06db3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff; /* asegura que el fondo sea blanco*/
+}
+
+/*Background rose*/
+.bg-rose {
+  background-color: #ffe4e6;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.text-rose {
+  color: #d06db3;
+}

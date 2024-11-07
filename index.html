@@ -7,91 +7,20 @@
     <link rel="icon" href="img-zapatillas de cristal.png" sizes="50x50">
     <meta name="description" content="Venta de zapatillas elegantes y cómodas">
     <meta name="author" content="Mirian">
-
+    <link rel="stylesheet" href="./css/styles.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Zapatillas de Cristal</title>
 
-    <style>
-        body {
-            background-color: #ffe4e6;
-            color: #333;
-        }
-        
-        h1, h2, h3 {
-            color: #d06db3;
-        }
-        
-        .navbar {
-            background-color: #f7b2d9;
-        }
-        
-        .navbar a {
-            color: #fff;
-            font-size: 1.2rem;
-        }
-        
-        .navbar-brand,
-        .navbar-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-        
-        .btn-custom {
-            background-color: #ff80ac;
-            color: #fff;
-        }
-        
-        .btn-custom:hover {
-            background-color: #f06292;
-        }
-        
-        footer {
-            background-color: #f7b2d9;
-            color: #ffffff;
-        }
-        
-        .footer-links a {
-            color: #d06db3;
-            margin-right: 10px;
-            font-size: 1.5rem;
-        }
-        
-        .product img {
-            border-radius: 10px;
-            border: 2px solid #d06db3;
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-        }
-        
-        .highlight {
-            font-size: 1.8rem;
-            color: #d06db3;
-            font-weight: bold;
-        }
-        
-        /* Estilo de las cards de productos */
-        .card {
-            border: 1px solid #d06db3;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            background-color: #fff; /* asegura que el fondo sea blanco*/
-        }
-    </style>
 </head>
 
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="-fluid w-full">
             <a class="navbar-brand" href="#">
                 <img src="img-zapatillas de cristal.png" width="100" alt="logozapatillas">
             </a>
@@ -118,12 +47,12 @@
     </nav>
 
     <!-- Sección Nosotros -->
-    <section id="nosotros" class="container text-center my-5">
+    <section id="nosotros" class=" text-center bg-rose p-5">
         <h1>Nosotros</h1>
         <p class="fs-4">¡Bienvenida a un mundo de estilo y comodidad donde cada paso cuenta y tu esencia se refleja en cada diseño!</p>
         <p class="fs-4">Con 6 años de experiencia, nuestras zapatillas combinan elegancia, confort y calidad. Innovamos para la mujer moderna.</p>
 
-        <div class="row my-3">
+        <div class="row ">
             <div class="col-md-4">
                 <h3 class="highlight">100%</h3>
                 <p><strong>Clientes satisfechos</strong></p>
@@ -140,53 +69,71 @@
     </section>
 
     <!-- Sección Productos -->
-    <main id="productos" class="container d-flex flex-column justify-content-center align-items-center">
+    <main id="productos" class="bg-rose d-flex flex-column justify-content-center align-items-center">
         <h1 class="text-center">Nuestros Productos</h1>
-        <div class="row container gap-3">
-            <!-- Primer producto -->
-            <div class="col-md-4 text-center card p-3">
-                <a href="https://pe.tommy.com/zapatillas-para-dama-fw0fw07384ybs/p?srsltid=AfmBOoqNqXaqrfKy5P8IB59fbZrwmE9L-tZVB8a-USBo6g4e-MtHOnSC" target="_blank">
-                    <img src="https://cdn17.nnnow.com/web-images/large/styles/12YKBJZEO55/1694690207456/2.jpg" alt="Zapatilla Modelo 1" class="img-fluid">
-                    <h3>ZAPATILLAS ELEVATED EMBOSSED RUNNER GOLD</h3>
-                </a>
-                <p>Precio: S/149.99</p>
-                <p>Zapatillas estilo running con detalles atléticos y paneles de malla para una apariencia única.</p>
-            </div>
 
-            <!-- Segundo producto -->
-            <div class="col-md-4 text-center card p-3">
-                <a href="https://pe.tommy.com/zapatillas-para-dama-fw0fw07297th2/p" target="_blank">
-                    <img src="https://img.eobuwie.cloud/eob_product_660w_880h(1/2/e/8/12e88c732f4ca665a2e2e748d5b866b21b009ecd_02_0000303035396.jpg,jpg)" alt="Zapatilla Modelo 2" class="img-fluid">
-                    <h3>ZAPATILLAS EMBOSSED COURT SNEAKER</h3>
-                </a>
-                <p>Precio: S/150.00</p>
-                <p>Zapatillas de piel estilo tenis, con suela cupsole y detalles distintivos para un look sofisticado.</p>
+        <div id="carouselExample" class="carousel slide w-full">
+            <div class="carousel-inner ">
+              <div class="carousel-item active ">
+                <div class="col-md-3 text-center card p-3 m-auto">
+                    <a href="https://pe.tommy.com/zapatillas-para-dama-fw0fw07384ybs/p?srsltid=AfmBOoqNqXaqrfKy5P8IB59fbZrwmE9L-tZVB8a-USBo6g4e-MtHOnSC" target="_blank">
+                        <img src="https://cdn17.nnnow.com/web-images/large/styles/12YKBJZEO55/1694690207456/2.jpg" alt="Zapatilla Modelo 1" class="img-fluid">
+                        <h3>ZAPATILLAS ELEVATED EMBOSSED RUNNER GOLD</h3>
+                    </a>
+                    <p>Precio: S/149.99</p>
+                    <p>Zapatillas estilo running con detalles atléticos y paneles de malla para una apariencia única.</p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="col-md-3 text-center card p-3 m-auto">
+                    <a href="https://pe.tommy.com/zapatillas-para-dama-fw0fw07297th2/p" target="_blank">
+                        <img src="https://img.eobuwie.cloud/eob_product_660w_880h(1/2/e/8/12e88c732f4ca665a2e2e748d5b866b21b009ecd_02_0000303035396.jpg,jpg)" alt="Zapatilla Modelo 2" class="img-fluid">
+                        <h3>ZAPATILLAS EMBOSSED COURT SNEAKER</h3>
+                    </a>
+                    <p>Precio: S/150.00</p>
+                    <p>Zapatillas de piel estilo tenis, con suela cupsole y detalles distintivos para un look sofisticado.</p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="col-md-3 text-center card p-3 m-auto">
+                    <div class="text-center card p-3">
+                        <a href="https://pe.tommy.com/zapatillas-para-dama-en0en02215bds/p" target="_blank">
+                            <img src="https://img.eobuwie.cloud/eob_product_660w_880h(1/a/b/3/1ab3acc5822fcb831f9f58865eed77f61963db2a_02_0000303033927_SW.jpg,jpg)" alt="Zapatilla Modelo 3" class="img-fluid">
+                            <h3>ZAPATILLAS TJW TRANSLUCENT RUNNER</h3>
+                        </a>
+                        <p>Precio: S/159.90</p>
+                        <p>Modelo running con paneles de malla translúcida y detalles de color para un estilo alegre.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="col-md-3 text-center card p-3 m-auto">
+                    <div class="text-center card product-bg-white p-3">
+                        <a href="https://pe.tommy.com/zapatillas-para-dama-botin-fw0fw07308ybl/p" target="_blank">
+                            <img src="imagen4.png" alt="Zapatilla Modelo 4" class="img-fluid">
+                            <h3>ZAPATILLAS TH HI BASKET SNEAKER</h3>
+                        </a>
+                        <p>Precio: S/169.90</p>
+                        <p>Zapatillas TH HI BASKET SNEAKER con suela gruesa y detalles modernos, ideales para el estilo urbano.</p>
+                    </div>
+                </div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-            <!-- Tercer producto -->
-            <div class="col-md-4 text-center card p-3">
-                <a href="https://pe.tommy.com/zapatillas-para-dama-en0en02215bds/p" target="_blank">
-                    <img src="https://img.eobuwie.cloud/eob_product_660w_880h(1/a/b/3/1ab3acc5822fcb831f9f58865eed77f61963db2a_02_0000303033927_SW.jpg,jpg)" alt="Zapatilla Modelo 3" class="img-fluid">
-                    <h3>ZAPATILLAS TJW TRANSLUCENT RUNNER</h3>
-                </a>
-                <p>Precio: S/159.90</p>
-                <p>Modelo running con paneles de malla translúcida y detalles de color para un estilo alegre.</p>
-            </div>
 
-            <!-- Cuarto producto agregado -->
-            <div class="col-md-4 text-center card product-bg-white p-3">
-                <a href="https://pe.tommy.com/zapatillas-para-dama-botin-fw0fw07308ybl/p" target="_blank">
-                    <img src="imagen4.png" alt="Zapatilla Modelo 4" class="img-fluid">
-                    <h3>ZAPATILLAS TH HI BASKET SNEAKER</h3>
-                </a>
-                <p>Precio: S/169.90</p>
-                <p>Zapatillas TH HI BASKET SNEAKER con suela gruesa y detalles modernos, ideales para el estilo urbano.</p>
-            </div>
-        </div>
     </main>
 
     <!-- Sección Contacto -->
-    <section id="contacto" class="container my-5">
+    <section id="contacto" class=" bg-rose p-4 md-p-8">
         <h2 class="text-center">Contacto</h2>
         <form action="/submit" method="POST" class="row g-3">
             <div class="col-md-6">
@@ -226,7 +173,8 @@
     </footer>
 
     <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
