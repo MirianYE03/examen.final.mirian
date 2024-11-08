@@ -6,11 +6,7 @@ body {
 h1,
 h2,
 h3 {
-  color: #d06db3 !important;
-}
-
-h1 {
-  color: red;
+  color: #d06db3;
 }
 
 .navbar {
@@ -33,6 +29,9 @@ h1 {
 .btn-custom {
   background-color: #ff80ac;
   color: #fff;
+  padding: 16px 48px;
+  border: none;
+  border-radius: 12px;
 }
 
 .btn-custom:hover {
@@ -85,4 +84,33 @@ h3 {
 
 .text-rose {
   color: #d06db3;
+}
+
+#nosotros h2,
+#productos h2,
+#contacto h2,
+#carouselExample h3 {
+  color: #d06db3;
+  text-decoration: none;
+}
+
+.card-carousel {
+  margin: 0 auto;
+}
+
+.card-height {
+  min-height: 680px;
+}
+
+.arrow-button {
+  color: unset;
+}
+
+#carouselExample .arrow {
+  color: #d06db3;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
 }
